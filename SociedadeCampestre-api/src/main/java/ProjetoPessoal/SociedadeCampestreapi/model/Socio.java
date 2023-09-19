@@ -39,7 +39,7 @@ public class Socio {
     @OneToOne(cascade = CascadeType.ALL)
     private Contato contato;
     
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Endereco endereco;
     
 	public Socio() {
